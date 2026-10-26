@@ -1,0 +1,8 @@
+{
+  "task": "TSUNAMI-001",
+  "round1": {
+    "brief": "handoff/briefs/TSUNAMI-001.md",
+    "plan": "handoff/plans/TSUNAMI-001.md",
+    "guardedPaths": ["src/","tests/","index.html"]
+  }
+}
