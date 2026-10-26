@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-10-26T20:06:01.891Z",
+  "standard": "WCAG 2.2 AA：正文 4.5:1、大字 3:1、非文字 3:1、禁用态自定 2:1",
+  "tokensSource": "src/styles/tokens.css",
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "rows": [
+    {
+      "fg": "--text-1",
+      "bg": "--bg-0",
+      "ratio": 17.4,
+      "min": 4.5,
+      "ok": true,
+      "use": "正文/标题（主背景）",
+      "fgHex": "#F4FBFF",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--text-2",
+      "bg": "--bg-0",
+      "ratio": 12.21,
+      "min": 4.5,
+      "ok": true,
+      "use": "次级正文（主背景）",
+      "fgHex": "#C2D7E1",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--text-3",
+      "bg": "--bg-0",
+      "ratio": 9.19,
+      "min": 4.5,
+      "ok": true,
+      "use": "辅助说明（主背景）",
+      "fgHex": "#A0BDC9",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--text-1",
+      "bg": "--bg-1",
+      "ratio": 15.09,
+      "min": 4.5,
+      "ok": true,
+      "use": "正文（卡片底）",
+      "fgHex": "#F4FBFF",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--text-2",
+      "bg": "--bg-1",
+      "ratio": 10.59,
+      "min": 4.5,
+      "ok": true,
+      "use": "次级正文（卡片底）",
+      "fgHex": "#C2D7E1",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--text-3",
+      "bg": "--bg-1",
+      "ratio": 7.98,
+      "min": 4.5,
+      "ok": true,
+      "use": "辅助说明（卡片底）",
+      "fgHex": "#A0BDC9",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--text-disabled",
+      "bg": "--bg-1",
+      "ratio": 4.98,
+      "min": 2,
+      "ok": true,
+      "use": "禁用态文字（自定 ≥2）",
+      "fgHex": "#7895A3",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--accent",
+      "bg": "--bg-0",
+      "ratio": 8.89,
+      "min": 4.5,
+      "ok": true,
+      "use": "强调文字（链接/编号）",
+      "fgHex": "#28C7D9",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--accent",
+      "bg": "--bg-1",
+      "ratio": 7.71,
+      "min": 4.5,
+      "ok": true,
+      "use": "强调文字（卡片底）",
+      "fgHex": "#28C7D9",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--text-inverse",
+      "bg": "--accent",
+      "ratio": 8.89,
+      "min": 4.5,
+      "ok": true,
+      "use": "主按钮文字（青底深字）",
+      "fgHex": "#071722",
+      "bgHex": "#28C7D9"
+    },
+    {
+      "fg": "--warning",
+      "bg": "--bg-0",
+      "ratio": 11.91,
+      "min": 4.5,
+      "ok": true,
+      "use": "警示文字",
+      "fgHex": "#FFC870",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--danger",
+      "bg": "--bg-0",
+      "ratio": 8.04,
+      "min": 4.5,
+      "ok": true,
+      "use": "危险文字",
+      "fgHex": "#FF8B86",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--success",
+      "bg": "--bg-0",
+      "ratio": 11.71,
+      "min": 4.5,
+      "ok": true,
+      "use": "成功文字",
+      "fgHex": "#7CE3B6",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--border-1",
+      "bg": "--bg-0",
+      "ratio": 4.86,
+      "min": 3,
+      "ok": true,
+      "use": "非文字：常规边框",
+      "fgHex": "#618A9B",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--border-1",
+      "bg": "--bg-1",
+      "ratio": 4.22,
+      "min": 3,
+      "ok": true,
+      "use": "非文字：卡片边框",
+      "fgHex": "#618A9B",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--border-2",
+      "bg": "--bg-1",
+      "ratio": 8.56,
+      "min": 3,
+      "ok": true,
+      "use": "非文字：选中边框",
+      "fgHex": "#86C9DB",
+      "bgHex": "#0F2532"
+    },
+    {
+      "fg": "--focus",
+      "bg": "--bg-0",
+      "ratio": 13.24,
+      "min": 3,
+      "ok": true,
+      "use": "非文字：焦点环",
+      "fgHex": "#FFD86A",
+      "bgHex": "#071722"
+    },
+    {
+      "fg": "--text-3",
+      "bg": "--bg-0",
+      "ratio": 9.19,
+      "min": 3,
+      "ok": true,
+      "use": "大字（≥24px）",
+      "fgHex": "#A0BDC9",
+      "bgHex": "#071722"
+    }
+  ]
+}

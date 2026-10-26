@@ -1,0 +1,147 @@
+/* src/styles/tokens.css —— 颜色与排版的单一真源。所有组件仅使用变量。 */
+
+/* —— 字体（本地托管，零外域请求）—— */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-sc-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-sc-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/inter-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/ibm-plex-mono-400.woff2') format('woff2');
+}
+
+:root {
+  /* 主背景 */
+  --bg-0: #071722;
+  --bg-1: #0F2532;
+  --bg-2: #153445;
+  --bg-overlay: #09212F;
+
+  /* 文字 */
+  --text-1: #F4FBFF;
+  --text-2: #C2D7E1;
+  --text-3: #A0BDC9;
+  --text-disabled: #7895A3;
+  --text-inverse: #071722;
+
+  /* 边界 */
+  --border-1: #618A9B;
+  --border-2: #86C9DB;
+  --focus: #FFD86A;
+
+  /* 语义 */
+  --success: #7CE3B6;
+  --warning: #FFC870;
+  --danger: #FF8B86;
+  --info: #88C7FF;
+
+  /* 强调（单一主色青蓝） */
+  --accent: #28C7D9;
+  --accent-hover: #5CDBE6;
+  --accent-pressed: #12A9BC;
+  --accent-muted: #103F4A;
+
+  /* 海洋（着色器与材质统一来源见 src/scene/palette.js） */
+  --sea-top: #21758B;
+  --sea-deep: #123C54;
+  --sea-sub: #174354;
+  --seabed: #7F7167;
+  --rock: #655950;
+  --land: #A69B81;
+  --crest: #6BE5F3;
+  --hazard: #FFC870;
+
+  /* 字体族 */
+  --font-cn: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  --font-latin: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* 字阶（比例约 1.25） */
+  --fs-0: 12px;
+  --lh-0: 18px;
+  --fs-1: 14px;
+  --lh-1: 20px;
+  --fs-2: 16px;
+  --lh-2: 26px;
+  --fs-3: 20px;
+  --lh-3: 30px;
+  --fs-4: 25px;
+  --lh-4: 32px;
+  --fs-5: 31px;
+  --lh-5: 39px;
+  --fs-6: 39px;
+  --lh-6: 48px;
+
+  /* 栅格与间距 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --container: 1440px;
+
+  /* 圆角 */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* 边框 / 阴影 */
+  --line: 1px solid var(--border-1);
+  --line-active: 2px solid var(--border-2);
+  --shadow-0: none;
+  --shadow-1: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-2: 0 12px 28px rgba(0, 0, 0, 0.28);
+  --shadow-3: 0 18px 44px rgba(0, 0, 0, 0.34);
+  --shadow-4: 0 24px 64px rgba(0, 0, 0, 0.42);
+
+  /* z 层级 */
+  --z-base: 0;
+  --z-canvas: 1;
+  --z-canvas-label: 2;
+  --z-sticky: 10;
+  --z-popover: 20;
+  --z-dialog: 30;
+  --z-toast: 40;
+
+  /* 动效 */
+  --ease-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --ease-enter: cubic-bezier(0, 0, 0.38, 0.9);
+  --ease-exit: cubic-bezier(0.2, 0, 1, 0.9);
+  --dur-fast: 120ms;
+  --dur-state: 180ms;
+  --dur-panel: 240ms;
+  --dur-camera: 900ms;
+}

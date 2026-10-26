@@ -1,0 +1,17 @@
+{
+  "maxVertexTextureUnits": 32,
+  "maxTextureSize": 8192,
+  "renderer": "WebKit WebGL",
+  "vendor": "WebKit",
+  "dpr": 1,
+  "canvas": [
+    990,
+    508
+  ],
+  "drawCalls": 8,
+  "triangles": 23842,
+  "programs": 13,
+  "p50": 33.3,
+  "p95": 33.4,
+  "avg": 33.75
+}

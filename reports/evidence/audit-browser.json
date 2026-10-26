@@ -1,0 +1,533 @@
+{
+  "generatedAt": "2026-10-26T20:15:04.915Z",
+  "base": "http://127.0.0.1:57542/",
+  "node": "v22.22.2",
+  "chrome": "channel:chrome",
+  "total": 13,
+  "passed": 13,
+  "failed": 0,
+  "results": [
+    {
+      "id": "A02",
+      "name": "五个视口加载：console error=0、pageerror=0、无横滚、无截字",
+      "pass": true,
+      "detail": {
+        "offenders": []
+      }
+    },
+    {
+      "id": "A07",
+      "name": "画布在 1440 / 390 / 375 可见",
+      "pass": true,
+      "detail": {
+        "canvas": [
+          {
+            "tag": "1440x900",
+            "canvas": {
+              "w": 990,
+              "h": 508,
+              "top": 379
+            }
+          },
+          {
+            "tag": "390x844",
+            "canvas": {
+              "w": 356,
+              "h": 508,
+              "top": 384
+            }
+          },
+          {
+            "tag": "375x812",
+            "canvas": {
+              "w": 341,
+              "h": 508,
+              "top": 384
+            }
+          },
+          {
+            "tag": "768x1024",
+            "canvas": {
+              "w": 718,
+              "h": 508,
+              "top": 371
+            }
+          },
+          {
+            "tag": "1024x768",
+            "canvas": {
+              "w": 610,
+              "h": 508,
+              "top": 379
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "A01",
+      "name": "一次加载 + 全章节交互后域外请求数 = 0",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "external": []
+      }
+    },
+    {
+      "id": "A03",
+      "name": "60 个 rAF：帧 ID 唯一、时间戳严格递增",
+      "pass": true,
+      "detail": {
+        "count": 60,
+        "uniqueIds": 60,
+        "monotonic": true,
+        "visibility": "visible",
+        "hasFocus": true
+      }
+    },
+    {
+      "id": "A04",
+      "name": "c(4000)≈713.11km/h、c(10)≈9.9045m/s、H 比≈4.4721、λ=cT",
+      "pass": true,
+      "detail": {
+        "depth": 4000,
+        "speed": 713.1271976302685,
+        "height": 1.118033988749895,
+        "wavelength": 118.85453293837807,
+        "period": 10,
+        "green": 4.47213595499958
+      }
+    },
+    {
+      "id": "A05",
+      "name": "七章各有可观察的场景位移 + 中文解说 + 章节态同步 + 专属部件显隐",
+      "pass": true,
+      "detail": {
+        "distinctSceneStates": 5,
+        "chapters": [
+          {
+            "i": 0,
+            "camMoved": true,
+            "title": "01 地壳一动，海底跟着变",
+            "textLen": 122,
+            "active": "0",
+            "parts": [
+              "fault-group",
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "terrain"
+            ]
+          },
+          {
+            "i": 1,
+            "camMoved": true,
+            "title": "02 动的是整根水柱",
+            "textLen": 108,
+            "active": "1",
+            "parts": [
+              "fault-group",
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "water-column",
+              "terrain"
+            ]
+          },
+          {
+            "i": 2,
+            "camMoved": true,
+            "title": "03 深海：快却不高",
+            "textLen": 114,
+            "active": "2",
+            "parts": [
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "terrain"
+            ]
+          },
+          {
+            "i": 3,
+            "camMoved": true,
+            "title": "04 地震波先到，海啸波随后",
+            "textLen": 148,
+            "active": "3",
+            "parts": [
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "wavefront-group",
+              "terrain"
+            ]
+          },
+          {
+            "i": 4,
+            "camMoved": true,
+            "title": "05 浅水：慢下来、挤起来",
+            "textLen": 151,
+            "active": "4",
+            "parts": [
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "terrain"
+            ]
+          },
+          {
+            "i": 5,
+            "camMoved": true,
+            "title": "06 波前变陡，有时先退",
+            "textLen": 126,
+            "active": "5",
+            "parts": [
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "terrain"
+            ]
+          },
+          {
+            "i": 6,
+            "camMoved": true,
+            "title": "07 不止一道浪，上岸成灾",
+            "textLen": 137,
+            "active": "6",
+            "parts": [
+              "ocean-surface",
+              "ocean-grid",
+              "ocean-cut",
+              "crest-line",
+              "shore-group",
+              "terrain"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "A06-1",
+      "name": "参数/播放控件 100ms 内反馈并更新数值",
+      "pass": true,
+      "detail": {
+        "dt1": 0.699999988079071,
+        "dt2": 0.19999998807907104,
+        "speed": 813.0901057078484,
+        "depth": 5200,
+        "playing": true
+      }
+    },
+    {
+      "id": "A06-2",
+      "name": "Space 切换播放、ArrowRight 切下一章",
+      "pass": true,
+      "detail": {
+        "focus": "playBtn",
+        "before": {
+          "playing": true,
+          "chapter": 3
+        },
+        "afterSpace": false,
+        "afterArrow": 4
+      }
+    },
+    {
+      "id": "U05/U06",
+      "name": "顶点纹理单元数 / draw calls / 本机帧时（真实 Chrome，headless swiftshader）",
+      "pass": true,
+      "detail": {
+        "maxVertexTextureUnits": 32,
+        "maxTextureSize": 8192,
+        "renderer": "WebKit WebGL",
+        "vendor": "WebKit",
+        "dpr": 1,
+        "canvas": [
+          990,
+          508
+        ],
+        "drawCalls": 8,
+        "triangles": 23842,
+        "programs": 13,
+        "p50": 33.3,
+        "p95": 33.4,
+        "avg": 33.75
+      }
+    },
+    {
+      "id": "A09",
+      "name": "科学/夸张/来源声明常驻，来源链接可追溯",
+      "pass": true,
+      "detail": {
+        "misses": [],
+        "sourceCount": 7,
+        "extLinks": [],
+        "legend": false
+      }
+    },
+    {
+      "id": "A08",
+      "name": "prefers-reduced-motion：镜头不自动运动，内容等价",
+      "pass": true,
+      "detail": {
+        "stillCamera": true,
+        "reduced": true,
+        "cls": true,
+        "sameContent": true
+      }
+    },
+    {
+      "id": "A08-2",
+      "name": "无 WebGL 时给出同内容可读回退",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "staticFigure": true,
+        "chapters": 7,
+        "hasText": true
+      }
+    },
+    {
+      "id": "A02-2",
+      "name": "桌面主流程 console/page/request 错误 = 0",
+      "pass": true,
+      "detail": {
+        "ce": [],
+        "pe": [],
+        "failed": []
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "w": 1440,
+      "h": 900,
+      "tag": "1440x900",
+      "overflowX": 0,
+      "clipped": [],
+      "canvas": {
+        "w": 990,
+        "h": 508,
+        "top": 379
+      },
+      "stageVisible": true,
+      "external": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failed": []
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "tag": "390x844",
+      "overflowX": 0,
+      "clipped": [],
+      "canvas": {
+        "w": 356,
+        "h": 508,
+        "top": 384
+      },
+      "stageVisible": true,
+      "external": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failed": []
+    },
+    {
+      "w": 375,
+      "h": 812,
+      "tag": "375x812",
+      "overflowX": 0,
+      "clipped": [],
+      "canvas": {
+        "w": 341,
+        "h": 508,
+        "top": 384
+      },
+      "stageVisible": true,
+      "external": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failed": []
+    },
+    {
+      "w": 768,
+      "h": 1024,
+      "tag": "768x1024",
+      "overflowX": 0,
+      "clipped": [],
+      "canvas": {
+        "w": 718,
+        "h": 508,
+        "top": 371
+      },
+      "stageVisible": true,
+      "external": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failed": []
+    },
+    {
+      "w": 1024,
+      "h": 768,
+      "tag": "1024x768",
+      "overflowX": 0,
+      "clipped": [],
+      "canvas": {
+        "w": 610,
+        "h": 508,
+        "top": 379
+      },
+      "stageVisible": true,
+      "external": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failed": []
+    }
+  ],
+  "chapters": [
+    {
+      "index": 0,
+      "camMoved": true,
+      "cam": [
+        4.111,
+        1.919,
+        15.43
+      ],
+      "visible": [
+        "fault-group",
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "terrain"
+      ],
+      "title": "01 地壳一动，海底跟着变",
+      "textLen": 122,
+      "activeChapter": "0"
+    },
+    {
+      "index": 1,
+      "camMoved": true,
+      "cam": [
+        4.389,
+        0.988,
+        13.52
+      ],
+      "visible": [
+        "fault-group",
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "water-column",
+        "terrain"
+      ],
+      "title": "02 动的是整根水柱",
+      "textLen": 108,
+      "activeChapter": "1"
+    },
+    {
+      "index": 2,
+      "camMoved": true,
+      "cam": [
+        -1.966,
+        2.309,
+        16.675
+      ],
+      "visible": [
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "terrain"
+      ],
+      "title": "03 深海：快却不高",
+      "textLen": 114,
+      "activeChapter": "2"
+    },
+    {
+      "index": 3,
+      "camMoved": true,
+      "cam": [
+        0.171,
+        3.755,
+        17.993
+      ],
+      "visible": [
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "wavefront-group",
+        "terrain"
+      ],
+      "title": "04 地震波先到，海啸波随后",
+      "textLen": 148,
+      "activeChapter": "3"
+    },
+    {
+      "index": 4,
+      "camMoved": true,
+      "cam": [
+        5.756,
+        1.253,
+        11.134
+      ],
+      "visible": [
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "terrain"
+      ],
+      "title": "05 浅水：慢下来、挤起来",
+      "textLen": 151,
+      "activeChapter": "4"
+    },
+    {
+      "index": 5,
+      "camMoved": true,
+      "cam": [
+        6.483,
+        2.246,
+        10.358
+      ],
+      "visible": [
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "terrain"
+      ],
+      "title": "06 波前变陡，有时先退",
+      "textLen": 126,
+      "activeChapter": "5"
+    },
+    {
+      "index": 6,
+      "camMoved": true,
+      "cam": [
+        6.708,
+        3.02,
+        9.724
+      ],
+      "visible": [
+        "ocean-surface",
+        "ocean-grid",
+        "ocean-cut",
+        "crest-line",
+        "shore-group",
+        "terrain"
+      ],
+      "title": "07 不止一道浪，上岸成灾",
+      "textLen": 137,
+      "activeChapter": "6"
+    }
+  ]
+}

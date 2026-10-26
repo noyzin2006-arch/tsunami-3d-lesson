@@ -1,0 +1,18 @@
+PASS  c(h=4000m) m/s  got=198.09088823063013 m/s  want=198.09088823063013±1e-9 m/s
+PASS  c(h=4000m) km/h  got=713.1271976302685 km/h  want=713.11±0.05 km/h
+PASS  c(h=10m) m/s  got=9.904544411531507 m/s  want=9.9045±0.001 m/s
+PASS  Green 4000→10  got=4.47213595499958 ×  want=4.4721±0.001 ×
+PASS  H(h=10) 由 H0=0.25m  got=1.118033988749895 m  want=1.118±0.001 m
+PASS  λ(h=4000,T=600)  got=118.85453293837807 km  want=118.86±0.05 km
+PASS  λ(h=10,T=600)  got=5.942726646918905 km  want=5.94±0.02 km
+PASS  P 波 300km  got=50 s  want=50±0.000001 s
+PASS  海啸 300km  got=1514.4563320384568 s  want=1514.4563320384568±0.000001 s
+PASS  海盆水深 @0km  got=4000 m  want=4000±1e-9 m
+PASS  海盆水深 @795km  got=10 m  want=10±1e-9 m
+PASS  章节锚点数  got=8 个  want=8±0 个
+PASS  末锚点 > 首锚点  got=1  want=1±0
+PASS  chapterForTime(末)  got=6  want=6±0
+PASS  6000m 比 2000m 更快  got=1  want=1±0
+PASS  6000m Green 比更大  got=1  want=1±0
+PASS  6000m Green 比数值  got=4.949232003839765 ×  want=4.9492±0.001 ×
+PASS  6000m 波列末锚点更早  got=1  want=1±0

@@ -1,0 +1,139 @@
+/* src/styles/layout.css —— 固定布局与响应式断点（不随章节更换）。 */
+
+.page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+
+/* 页眉 */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-8);
+  background: rgba(7, 23, 34, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: var(--line);
+}
+.site-header .brand { display: flex; flex-direction: column; gap: 2px; }
+.site-header .brand .name { font-size: var(--fs-3); font-weight: 600; }
+.site-header .brand .sub { font-size: var(--fs-0); color: var(--text-3); }
+.site-header .source-link { font-size: var(--fs-1); }
+
+/* 首屏 */
+.hero {
+  padding: var(--space-16) 0 var(--space-8);
+  text-align: center;
+}
+.hero h1 { font-size: var(--fs-6); line-height: var(--lh-6); }
+.hero .lede {
+  font-size: var(--fs-3);
+  line-height: var(--lh-3);
+  color: var(--text-2);
+  max-width: 38ch;
+  margin: var(--space-4) auto 0;
+}
+
+/* 章节轨道：单行横滚（任何宽度都不换行，避免 7 个 chip 挤成两三行） */
+.chapter-rail {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  position: relative;
+  overflow: hidden;
+}
+.chapter-rail .rail-scroll {
+  display: flex;
+  gap: var(--space-2);
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: var(--space-1);
+}
+.chapter-rail .chapter-btn { flex: 0 0 auto; }
+.chapter-rail .rail-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  flex: 0 0 auto;
+  background: var(--bg-2);
+  border: var(--line);
+  border-radius: var(--radius-sm);
+}
+
+/* 主学习区两列 */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+/* 主舞台列 */
+.stage-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+/* 页尾来源 */
+.sources {
+  max-width: 960px;
+  margin: var(--space-16) auto var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* —— 响应式断点（严格按规划案 4.2）—— */
+
+/* ≥1280：两列 360 + 剩余，外边距32，舞台最小高度510 */
+@media (max-width: 1279px) {
+  .page { padding: 0 var(--space-6); }
+  .site-header { padding: 0 var(--space-6); }
+  .lesson-grid { grid-template-columns: 340px minmax(0, 1fr); }
+  .stage-figure { min-height: 480px; }
+}
+
+/* 768–1023：单列；章轨道横滚，先 3D 高440，再控制条与数值卡，再讲解与参数 */
+@media (max-width: 1023px) {
+  .lesson-grid { grid-template-columns: 1fr; }
+  .stage-figure { min-height: 440px; }
+  .site-header { height: 64px; }
+  /* 单列时顺序：舞台 → 控制 → 数值 → 讲解/参数 */
+  .stage-col { order: 1; }
+  .panel-left { order: 2; }
+}
+
+/* 481–767：单列；页眉56，舞台高 clamp(290,42vh,410)，控制44按钮折两行，数值2×3 */
+@media (max-width: 767px) {
+  .site-header { height: 56px; }
+  .site-header .brand .name { font-size: var(--fs-2); }
+  .stage-figure { min-height: clamp(290px, 42vh, 410px); }
+  .transport .controls { flex-wrap: wrap; }
+  .readouts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page { padding: 0 var(--space-4); }
+  .site-header { padding: 0 var(--space-4); }
+}
+
+/* ≤480：容器左右16；舞台高 clamp(260,38vh,350)；章节轨道单行横滚；参数单列；数据2×3；标题 fs-5 */
+@media (max-width: 480px) {
+  .hero h1 { font-size: var(--fs-5); line-height: var(--lh-5); }
+  .stage-figure { min-height: clamp(260px, 38vh, 350px); }
+  .param-fieldset .param-row { grid-template-columns: 1fr; }
+  .readouts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* 200% 文本放大：舞台可缩、面板自然增高、控制换行、不遮挡焦点 */
+@media (min-resolution: 2dppx) and (max-width: 600px) {
+  .transport .controls { flex-wrap: wrap; }
+}
